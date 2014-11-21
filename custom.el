@@ -43,8 +43,8 @@
 (prelude-require-packages '(sublime-themes))
 (load-theme 'brin t)
 
-(add-to-list 'default-frame-alist '(height . 50))
-(add-to-list 'default-frame-alist '(width . 160))
+(add-to-list 'default-frame-alist '(height . 44))
+(add-to-list 'default-frame-alist '(width . 110))
 
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'super)
