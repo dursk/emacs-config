@@ -52,6 +52,12 @@
 (set-face-attribute 'default nil :family "Source Code Pro")
 (set-face-attribute 'default nil :height 130)
 
-(remove-hook 'text-mode-hook 'prelude-enable-whitespace)
+(setq prelude-clean-whitespace-on-save nil)
 (scroll-bar-mode -1)
-(show-smartparens-global-mode -1)
+(turn-off-smartparens-mode)
+
+(prelude-require-packages `(multiple-cursors))
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
