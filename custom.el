@@ -40,6 +40,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+
 (prelude-require-packages '(sublime-themes))
 (load-theme 'brin t)
 
@@ -61,3 +62,5 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+(global-set-key (kbd "C-c m") 'comment-or-uncomment-region)
