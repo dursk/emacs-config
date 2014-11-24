@@ -65,3 +65,6 @@
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 (global-set-key (kbd "C-c m") 'comment-or-uncomment-region)
+
+(prelude-require-packages '(fiplr))
+(global-set-key (kbd "C-x f") 'fiplr-find-file)
