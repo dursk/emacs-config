@@ -55,7 +55,8 @@
 
 (setq prelude-clean-whitespace-on-save nil)
 (scroll-bar-mode -1)
-(turn-off-smartparens-mode)
+(global-hl-line-mode -1)
+(smartparens-global-mode -1)
 
 (prelude-require-packages `(multiple-cursors))
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
