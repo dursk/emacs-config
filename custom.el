@@ -40,6 +40,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+(prelude-require-packages '(neotree))
 
 (prelude-require-packages '(sublime-themes))
 (load-theme 'brin t)
