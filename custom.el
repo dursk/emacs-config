@@ -69,3 +69,14 @@
 
 (prelude-require-packages '(fiplr))
 (global-set-key (kbd "C-x f") 'fiplr-find-file)
+
+(defun scroll-up-one-line()
+    (interactive)
+    (scroll-up 1))
+
+(defun scroll-down-one-line()
+    (interactive)
+    (scroll-down 1))
+
+(global-set-key (kbd "C-.") 'scroll-down-one-line)
+(global-set-key (kbd "C-,") 'scroll-up-one-line)
