@@ -83,7 +83,7 @@
 (global-set-key (kbd "C-i") 'backward-char)
 (global-set-key [tab] 'indent-for-tab-command)
 (global-set-key (kbd "M-i") 'backward-word)
-(global-set-key (kbd "C-x j") 'ido-display-buffer)
+(global-set-key (kbd "C-x j") 'ido-switch-buffer)
 
 (defun scroll-up-one-line()
     (interactive)
