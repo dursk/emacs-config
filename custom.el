@@ -81,7 +81,7 @@
 (global-set-key (kbd "C-k") 'previous-line)
 (global-set-key (kbd "C-x d") 'kill-line)
 (global-set-key (kbd "C-i") 'backward-char)
-(global-set-key [tab] 'tab-to-tab-stop)
+(global-set-key [tab] 'indent-for-tab-command)
 (global-set-key (kbd "M-i") 'backward-word)
 (global-set-key (kbd "C-x j") 'ido-display-buffer)
 
