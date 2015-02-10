@@ -75,6 +75,7 @@
 (global-set-key (kbd "C-x d") 'kill-line)
 (global-set-key (kbd "C-i") 'backward-char)
 (global-set-key (kbd "M-i") 'backward-word)
+(global-set-key (kbd "C-x j") 'ido-display-buffer)
 
 ;; Stop using these I think I'm getting RSI omgomgomg
 (global-set-key (kbd "C-n") nil)
@@ -83,4 +84,13 @@
 (global-set-key (kbd "M-b") nil)
 (global-set-key (kbd "C-x b") nil)
 
-(global-set-key (kbd "C-x j") 'ido-display-buffer)
+(defun scroll-up-one-line()
+    (interactive)
+    (scroll-up 1))
+
+(defun scroll-down-one-line()
+    (interactive)
+    (scroll-down 1))
+
+(global-set-key (kbd "C-.") 'scroll-down-one-line)
+(global-set-key (kbd "C-,") 'scroll-up-one-line)
