@@ -78,7 +78,7 @@
 
 ;; Stop using these I think I'm getting RSI omgomgomg
 (global-set-key (kbd "C-n") nil)
-(global-set-key (kbd "C-n") nil)
+(global-set-key (kbd "C-p") nil)
 (global-set-key (kbd "C-b") nil)
 (global-set-key (kbd "M-b") nil)
 (global-set-key (kbd "C-x b") nil)
