@@ -70,19 +70,20 @@
 (prelude-require-packages '(fiplr))
 (global-set-key (kbd "C-x f") 'fiplr-find-file)
 
-(global-set-key (kbd "C-j") 'next-line)
-(global-set-key (kbd "C-k") 'previous-line)
-(global-set-key (kbd "C-x d") 'kill-line)
-(global-set-key (kbd "C-i") 'backward-char)
-(global-set-key (kbd "M-i") 'backward-word)
-(global-set-key (kbd "C-x j") 'ido-display-buffer)
-
 ;; Stop using these I think I'm getting RSI omgomgomg
 (global-set-key (kbd "C-n") nil)
 (global-set-key (kbd "C-p") nil)
 (global-set-key (kbd "C-b") nil)
 (global-set-key (kbd "M-b") nil)
 (global-set-key (kbd "C-x b") nil)
+
+(global-set-key (kbd "C-j") 'next-line)
+(global-set-key (kbd "C-k") 'previous-line)
+(global-set-key (kbd "C-x d") 'kill-line)
+(global-set-key (kbd "C-i") 'backward-char)
+(global-set-key [tab] 'tab-to-tab-stop)
+(global-set-key (kbd "M-i") 'backward-word)
+(global-set-key (kbd "C-x j") 'ido-display-buffer)
 
 (defun scroll-up-one-line()
     (interactive)
