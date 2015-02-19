@@ -70,6 +70,8 @@
 (prelude-require-packages '(fiplr))
 (global-set-key (kbd "C-x f") 'fiplr-find-file)
 
+(prelude-require-packages '(ag))
+
 ;; Stop using these I think I'm getting RSI omgomgomg
 (global-set-key (kbd "C-n") nil)
 (global-set-key (kbd "C-p") nil)
