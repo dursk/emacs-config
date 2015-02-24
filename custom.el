@@ -71,6 +71,7 @@
 (global-set-key (kbd "C-x f") 'fiplr-find-file)
 
 (prelude-require-packages '(ag))
+(setq ag-reuse-buffers 't)
 
 ;; Stop using these I think I'm getting RSI omgomgomg
 (global-set-key (kbd "C-n") nil)
