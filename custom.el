@@ -98,3 +98,10 @@
 
 (global-set-key (kbd "C-.") 'scroll-down-one-line)
 (global-set-key (kbd "C-,") 'scroll-up-one-line)
+
+(add-hook 'go-mode-hook
+    (lambda ()
+      (setq-default)
+      (setq tab-width 4)
+      (setq standard-indent 4)
+      (setq indent-tabs-mode nil)))
